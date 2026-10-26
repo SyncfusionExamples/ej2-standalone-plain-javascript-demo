@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node server.js"
   },
   "devDependencies": {
     "@syncfusion/ej2-buttons": "*",
@@ -14,8 +15,11 @@
     "@syncfusion/ej2-charts": "*",
     "@syncfusion/ej2-lineargauge": "*",
     "@syncfusion/ej2-circulargauge": "*",
+    "@syncfusion/ej2-cldr-data": "*",
+    "@syncfusion/ej2-dropdowns": "*",
+    "@syncfusion/ej2-locale": "*",
     "@syncfusion/ej2-fluent2-theme": "*",
     "typescript": "~6.0.3",
-    "vite": "^8.3.4"
+    "vite": "8.3.4"
   }
 }
