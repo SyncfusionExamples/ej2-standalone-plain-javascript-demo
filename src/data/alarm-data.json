@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1001,
+    "timestamp": "2026-10-26 10:00:00",
+    "severity": "High",
+    "status": "Active",
+    "quality": "Good",
+    "message": "Tank Level High"
+  },
+  {
+    "id": 1002,
+    "timestamp": "2026-10-26 10:02:00",
+    "severity": "Medium",
+    "status": "Acknowledged",
+    "quality": "Bad",
+    "message": "Sensor Communication Lost"
+  },
+  {
+    "id": 1003,
+    "timestamp": "2026-10-26 10:04:00",
+    "severity": "Low",
+    "status": "Closed",
+    "quality": "Stale",
+    "message": "Data Update Delayed"
+  },
+  {
+    "id": 1004,
+    "timestamp": "2026-10-26 10:05:00",
+    "severity": "High",
+    "status": "Active",
+    "quality": "Good",
+    "message": "Tank Pressure High"
+  },
+  {
+    "id": 1005,
+    "timestamp": "2026-10-26 10:06:00",
+    "severity": "Medium",
+    "status": "Acknowledged",
+    "quality": "Bad",
+    "message": "Flow Sensor Communication Lost"
+  },
+  {
+    "id": 1006,
+    "timestamp": "2026-10-26 10:07:00",
+    "severity": "Low",
+    "status": "Closed",
+    "quality": "Good",
+    "message": "Temperature Returned to Normal"
+  },
+  {
+    "id": 1007,
+    "timestamp": "2026-10-26 10:08:00",
+    "severity": "High",
+    "status": "Active",
+    "quality": "Stale",
+    "message": "Tank Level Reading Delayed"
+  },
+  {
+    "id": 1008,
+    "timestamp": "2026-10-26 10:09:00",
+    "severity": "Medium",
+    "status": "Active",
+    "quality": "Good",
+    "message": "Flow Rate Outside Expected Range"
+  },
+  {
+    "id": 1009,
+    "timestamp": "2026-10-26 10:10:00",
+    "severity": "Low",
+    "status": "Acknowledged",
+    "quality": "Bad",
+    "message": "Backup Sensor Communication Lost"
+  },
+  {
+    "id": 1010,
+    "timestamp": "2026-10-26 10:11:00",
+    "severity": "High",
+    "status": "Active",
+    "quality": "Good",
+    "message": "Tank Level Critical"
+  }
+]
