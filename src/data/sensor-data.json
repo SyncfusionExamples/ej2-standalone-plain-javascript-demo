@@ -1,0 +1,27 @@
+[
+  {
+    "timestamp": "2026-10-26T10:00:00",
+    "value": 80,
+    "quality": "Good"
+  },
+  {
+    "timestamp": "2026-10-26T10:01:00",
+    "value": 82,
+    "quality": "Good"
+  },
+  {
+    "timestamp": "2026-10-26T10:02:00",
+    "value": 84,
+    "quality": "Bad"
+  },
+  {
+    "timestamp": "2026-10-26T10:03:00",
+    "value": 83,
+    "quality": "Stale"
+  },
+  {
+    "timestamp": "2026-10-26T10:04:00",
+    "value": 85,
+    "quality": "Good"
+  }
+]
