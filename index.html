@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <base href="/ej2-standalone-plain-javascript-demo" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -14,37 +13,38 @@
     <div class="dashboard-shell">
       <header class="dashboard-header">
         <div class="header-copy">
-          <p class="eyebrow">MICROGUARD / OPERATIONS</p>
-          <h1>Tank Monitoring</h1>
-          <p class="header-description">
+          <p class="eyebrow" data-i18n="eyebrow">MICROGUARD / OPERATIONS</p>
+          <h1 data-i18n="title">Tank Monitoring</h1>
+          <p class="header-description" data-i18n="description">
             Sensor performance and alarm history for the monitored tank.
           </p>
         </div>
         <div class="header-actions">
-          <button id="rtlToggle" type="button"></button>
+          <label id="localization-label" for="localizationDropdown" data-i18n="localization">Localization</label>
+          <input id="localizationDropdown" type="text" />
         </div>
       </header>
 
-      <section class="metrics-grid" aria-label="Sample monitoring summary">
+      <section class="metrics-grid" aria-label="Sample monitoring summary" data-i18n-aria-label="summary">
         <article class="metric-card">
-          <p class="metric-label">Latest tank level</p>
+          <p class="metric-label" data-i18n="latestLevel">Latest tank level</p>
           <p class="metric-value" id="latest-level">--</p>
           <p class="metric-detail" id="latest-reading-time">Latest sensor sample</p>
         </article>
         <article class="metric-card">
-          <p class="metric-label">Latest data quality</p>
+          <p class="metric-label" data-i18n="latestQuality">Latest data quality</p>
           <p class="metric-value" id="latest-quality">--</p>
-          <p class="metric-detail">Quality at the latest sensor reading</p>
+          <p class="metric-detail" data-i18n="qualityDetail">Quality at the latest sensor reading</p>
         </article>
         <article class="metric-card">
-          <p class="metric-label">Active alarms</p>
+          <p class="metric-label" data-i18n="activeAlarms">Active alarms</p>
           <p class="metric-value" id="active-alarm-count">--</p>
-          <p class="metric-detail">Active records in the sample history</p>
+          <p class="metric-detail" data-i18n="activeAlarmDetail">Active records in the sample history</p>
         </article>
         <article class="metric-card">
-          <p class="metric-label">Alarm records</p>
+          <p class="metric-label" data-i18n="alarmRecords">Alarm records</p>
           <p class="metric-value" id="alarm-record-count">--</p>
-          <p class="metric-detail">Independent alarm JSON records</p>
+          <p class="metric-detail" data-i18n="alarmRecordDetail">Independent alarm JSON records</p>
         </article>
       </section>
 
@@ -53,8 +53,8 @@
           <section class="left-panel" aria-labelledby="chart-heading">
             <div class="panel-heading">
               <div>
-                <h2 id="chart-heading">Tank level trend</h2>
-                <p>Historical sensor readings from the sample dataset</p>
+                <h2 id="chart-heading" data-i18n="chartHeading">Tank level trend</h2>
+                <p data-i18n="chartDescription">Historical sensor readings from the sample dataset</p>
               </div>
             </div>
             <div id="chart-container" aria-labelledby="chart-heading"></div>
@@ -63,8 +63,8 @@
           <section class="right-panel" aria-labelledby="grid-heading">
             <div class="panel-heading">
               <div>
-                <h2 id="grid-heading">Alarm history</h2>
-                <p>Separate alarm records loaded from the sample dataset</p>
+                <h2 id="grid-heading" data-i18n="gridHeading">Alarm history</h2>
+                <p data-i18n="gridDescription">Separate alarm records loaded from the sample dataset</p>
               </div>
             </div>
             <div id="grid-container"></div>
@@ -75,8 +75,8 @@
           <section class="left-panel" aria-labelledby="level-gauge-heading">
             <div class="panel-heading">
               <div>
-                <h2 id="level-gauge-heading">Current tank level</h2>
-                <p>Latest sensor reading, on a 0-100% scale</p>
+                <h2 id="level-gauge-heading" data-i18n="levelGaugeHeading">Current tank level</h2>
+                <p data-i18n="levelGaugeDescription">Latest sensor reading, on a 0-100% scale</p>
               </div>
             </div>
             <div id="linear-gauge" aria-labelledby="level-gauge-heading"></div>
@@ -85,8 +85,8 @@
           <section class="right-panel" aria-labelledby="alarm-gauge-heading">
             <div class="panel-heading">
               <div>
-                <h2 id="alarm-gauge-heading">Active alarms</h2>
-                <p>Active records compared with total sample alarms</p>
+                <h2 id="alarm-gauge-heading" data-i18n="alarmGaugeHeading">Active alarms</h2>
+                <p data-i18n="alarmGaugeDescription">Active records compared with total sample alarms</p>
               </div>
             </div>
             <div id="circular-gauge" aria-labelledby="alarm-gauge-heading"></div>
